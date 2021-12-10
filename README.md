@@ -1,11 +1,14 @@
 # Final website for CS401
 
-Name: Hannah Jacobson
-email: hannahjacobson@u.boisestate.edu
+Name: Khaled Natouf
+email: khalednatouf@u.boisestate.edu
 
 ## How to run this website
 
-Detail how to run your code here!
+In order to run your code you should have php installed
+then run the following command: php -S localhost:3000
+open your browser and using the following url : 
+http://localhost:3000/
 
 ## Bugs
 
@@ -14,9 +17,6 @@ Detail any known bugs here
 ## Features
 
 Review all the features of your app here.
-
-
-
 
 Pages require nav
     Highlight which page we're on, or give it a title, whatever
