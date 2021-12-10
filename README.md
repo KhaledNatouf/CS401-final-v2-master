@@ -1,7 +1,7 @@
 # Final website for CS401
 
-Name: Khaled Natouf__ 
-email: khalednatouf@u.boisestate.edu
+Name: Khaled Natouf <br />
+email: khalednatouf@u.boisestate.edu <br />
 
 ## How to run this website
 
