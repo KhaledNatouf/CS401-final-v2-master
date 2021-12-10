@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+h1 {
+    color:black;
+    
+}
+a{
+    text-decoration: none ;
+    color: white
+}
+li {
+    display: inline;
+}
+.headContainer {
+    display: flex;
+    background-color:rgb(184, 218, 32);
+    height: 25%;
+    width: 100%;
+    
+}
+.titleItem {
+   
+    line-height: 100px;
+    text-align:left-end;
+    margin: 5px;
+    font-size: 60px;
+    color:azure;
+    font-size: 50px;
+}
+.headItem{
+    width: 10%;
+    /*background:goldenrod;*/
+    align-self:flex-end;
+    text-align: center;
+   
+    margin: 5px;
+    font-size: 40px;
+    color:white;
+}
+
+.headItem:hover{
+    background-color: rgb(161, 161, 196);
+}
+.blogContainer{
+    display: flex;
+    padding: 20px;
+    gap: 10;
+    justify-content: center;
+   
+
+}
+.blogItem{
+    background-color: rgb(255, 251, 240);
+    color: black;
+    height: 300;
+    text-align: center;
+    width: 75;
+}
+footer{
+    display: flex;
+    background-color: rgb(161, 161, 196);
+    height: 25%;
+    justify-content: center;
+    color: white;
+    
+}
+html { 
+    background: url(../img/back.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .blogItem{
+      
+      
+      text-align:center;
+      width: 50%
+  }

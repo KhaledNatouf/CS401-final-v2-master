@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+.head {
+    display: flex;
+    background-color: rgb(184, 218, 32);
+    height: 25%;
+    width: 100%;    
+}
+.title{
+   
+    line-height: 100px;
+    text-align:left-end;
+    margin: 5px;
+    font-size: 60px;
+    color:azure;
+    font-size: 50px;
+}
+.item{
+    width: 10%;
+    align-self: flex-end;
+    text-align: center;
+    margin: 5px;
+    font-size: 40px;
+    color :azure
+}
+h2 {
+    color:black;
+    text-align: center;  
+}
+h1 {
+    color:black;
+    text-align: center;   
+}
+a{
+    text-decoration: none ;
+    color: white
+}
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+  html { 
+    background: url(../img/blog\ 2.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
