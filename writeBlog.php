@@ -14,9 +14,9 @@ if( isset($_POST['title'] ) && isset( $_POST['textentry'] ) )
     file_put_contents('blogEntries.txt', $txt, FILE_APPEND);
 }
 echo '<script type="text/javascript">'; 
-    echo 'alert("New blog created successfully");'; 
-    echo 'window.location.href = "index.php";';
-    echo '</script>';
+echo 'alert("New blog created successfully");'; 
+echo 'window.location.href = "index.php";';
+echo '</script>';
 
 ?>
 
