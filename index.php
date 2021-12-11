@@ -6,7 +6,7 @@
 </head>
 <body>  
   <?php 
-  echo "<div class='headContainer'> ";
+  echo "<div class='Container'> ";
   echo "<div class='titleItem'>Echo Blogger</div>";
   echo "<div class='headItem'></div>";
   echo "<div class='headItem'></div>";

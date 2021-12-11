@@ -10,7 +10,7 @@ a{
 li {
     display: inline;
 }
-.headContainer {
+.Container {
     display: flex;
     background-color:rgb(184, 218, 32);
     height: 25%;
