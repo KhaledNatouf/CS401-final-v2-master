@@ -11,8 +11,7 @@ open your browser and using the following url : <br />
 http://localhost:3000/
 
 ## Bugs
-Thank u
-Detail any known bugs here
+No bugs were founded
 
 ## Features
 
