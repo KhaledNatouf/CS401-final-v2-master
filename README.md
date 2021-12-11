@@ -5,7 +5,7 @@ email: khalednatouf@u.boisestate.edu <br />
 
 ## How to run this website
 
-In order to run your program you should have php installed <br />
+In order to run your program you should have php installed in your machine<br />
 then run the following command: php -S localhost:3000 <br />
 open your browser and using the following url : <br />
 http://localhost:3000/
