@@ -23,7 +23,7 @@ li {
     text-align:left-end;
     margin: 5px;
     font-size: 60px;
-    color:azure;
+    color:white;
     font-size: 50px;
 }
 .headItem{
@@ -38,7 +38,7 @@ li {
 }
 
 .headItem:hover{
-    background-color: rgb(161, 161, 196);
+    background-color:#757f8b;
 }
 .blogContainer{
     display: flex;
