@@ -25,23 +25,23 @@
 <?php
 if( isset($_POST['Entry'] ))
 {
-    $lines = file('blogEntries.txt');
+    $FileLines = file('blogEntries.txt');
     $lineNumber = count(file($filename));
     $replace = $_POST['Entry'];
     $count = 0;
-    $sh=fopen('blogEntries.txt', 'r');
-    $th=fopen('editingFile.txt', 'w');
-    while (!feof($sh)) {
-        $line=fgets($sh);
+    $fh=fopen('blogEntries.txt', 'r');
+    $fout=fopen('editingFile.txt', 'w');
+    while (!feof($fh)) {
+        $line=fgets($fh);
         if ($count == $replace) {
             $line="";
         }
-        fwrite($th, $line);
+        fwrite($fout, $line);
         $count++;
     }
 
-    fclose($sh);
-    fclose($th);
+    fclose($fh);
+    fclose($fout);
 
     unlink('blogEntries.txt');
     rename('editingFile.txt', 'blogEntries.txt');

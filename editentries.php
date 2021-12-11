@@ -2,24 +2,24 @@
 if( isset($_POST['Entry'] ) && isset( $_POST['textentry'] ) && isset( $_POST['title'] ) )
 {
 
-    $lines = file('blogEntries.txt');
+    $fileLines = file('blogEntries.txt');
     $lineNumber = count(file($filename));
     $txt = $_POST['title'].'`'.$_POST['textentry'] . PHP_EOL; 
     $replace = $_POST['Entry'];
     $count = 0;
-    $sh=fopen('blogEntries.txt', 'r'); //current file
-    $th=fopen('editingFile.txt', 'w'); // new temporary file
-    while (!feof($sh)) {
-        $line=fgets($sh);
+    $fh=fopen('blogEntries.txt', 'r'); //current file
+    $fout=fopen('editingFile.txt', 'w'); // new temporary file
+    while (!feof($fh)) {
+        $line=fgets($fh);
         if ($count == $replace) {
             $line=$txt;
         }
-        fwrite($th, $line);
+        fwrite($fout, $line);
         $count++;
     }
 
-    fclose($sh);
-    fclose($th);
+    fclose($fh);
+    fclose($fout);
 
     unlink('blogEntries.txt');
     rename('editingFile.txt', 'blogEntries.txt');
