@@ -38,7 +38,6 @@
       echo "</span>";
       
     }
-    
     fclose($filename);
     echo"</div>";
     echo"</div>";
