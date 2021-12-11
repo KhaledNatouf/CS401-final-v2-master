@@ -23,7 +23,7 @@
   ?> 
 <?php
 echo "<div class ='writeContainer'>";
-echo "<form method='POST' action='writeentries.php' style='text-align:center' >";
+echo "<form method='POST' action='writeBlog.php' style='text-align:center' >";
 echo"<p>";
 echo"<label for='title'>Title:</label>";
 echo"<input type='text' id='title' name='title' placeholder='Enter your title please!'>";
