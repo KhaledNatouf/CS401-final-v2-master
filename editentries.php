@@ -12,7 +12,7 @@ if( isset($_POST['Entry'] ) && isset( $_POST['textentry'] ) && isset( $_POST['ti
     while (!feof($fh)) {
         $line=fgets($fh);
         if ($count == $replace) {
-            $line=$txt;
+            $line = $txt; 
         }
         fwrite($fout, $line);
         $count++;
@@ -24,7 +24,7 @@ if( isset($_POST['Entry'] ) && isset( $_POST['textentry'] ) && isset( $_POST['ti
     unlink('blogEntries.txt');
     rename('editingFile.txt', 'blogEntries.txt');
     echo '<script type="text/javascript">'; 
-    echo 'alert("New record created successfully");'; 
+    echo 'alert("You edited the blog successfully");'; 
     echo 'window.location.href = "index.php";';
     echo '</script>';
 }
