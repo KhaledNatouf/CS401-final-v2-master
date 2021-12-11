@@ -31,12 +31,15 @@
     
       $line = fgets($filename );
       $parts = explode("`", $line);
+      if ( ! isset($parts[1])) {
+        $parts[1] = null;
+     }
       echo "<span><h2>$parts[0]</h2> <p>$parts[1]</p>";
       echo "</span>";
       
     }
     
-    fclose($posts);
+    fclose($filename);
     echo"</div>";
     echo"</div>";
   ?>
