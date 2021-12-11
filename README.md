@@ -15,18 +15,14 @@ No bugs were founded
 
 ## Features
 
-Review all the features of your app here. <br />
+The program has the following feature: <br />
 
-Pages require nav <br /> 
-    Highlight which page we're on, or give it a title, whatever <br />
-custom style sheet <br />
-yui1
-Home Page - displays all current blog entries <br />
-Create Page - allow user to make new post <br />
-Edit Page - allow user to edit post <br />
-          - include way to delete post <br />
-Store log entires as files? <br />
+Home Page: displays all current blogs that has been created <br />
+Create Page: allow user to make new blog<br />
+Edit Page: allow user to edit post <br />
+Delete Page: allow user to delete a blog entry <br />
 
-Ref:https://stackoverflow.com/questions/35443812/how-to-save-string-entered-in-html-form-to-text-file
-https://stackoverflow.com/questions/235604/overwrite-line-in-file-with-php
+References: <br />
+https://stackoverflow.com/questions/4103287/read-a-plain-text-file-with-php<br />
+https://stackoverflow.com/questions/48490252/how-to-delete-a-single-line-in-a-txt-file-with-php
 
