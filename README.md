@@ -15,7 +15,7 @@ No bugs were founded
 
 ## Features
 
-The program has the following feature: <br />
+The program supports the following feature: <br />
 
 Home Page: displays all current blogs that has been created <br />
 Create Page: allow user to make new blog<br />
