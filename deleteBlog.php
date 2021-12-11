@@ -7,7 +7,7 @@
 </head>
 <body>
 <body>  
-  <?php 
+<?php 
   echo "<div class='head'> ";
   echo "<div class='title'>Echo Blogger</div>";
   echo "<div class='item'></div>";
@@ -17,13 +17,11 @@
   echo "<div class='item'></div>";
   echo "<div class='item'><a href='index.php'>Home</div>";
   echo "<div class='item'><a href='newBlog.php'>Create</a></div>";
-  echo "<div class='item'><a href='editBlog.php'>Edit</a></div>";
-  
+  echo "<div class='item'><a href='editBlog.php'>Edit</a></div>"; 
   echo "</div>";
   echo "<h1 style='text-align:center'> Welcome to bloggers deletepage:</h1>"; 
   echo "<h2>This page allow you to delete old entries</h2>";
-
-  ?> 
+?> 
 
 <?php
 
@@ -68,7 +66,7 @@ if( isset($_POST['Entry'] ))
 $filename = "blogEntries.txt";
 $lineNumber = count(file($filename));
 
-echo "<form action=\"deleteBlog.php\"style=\"text-align:center\" target=\"_blank\" method=\"POST\">";
+echo "<form action=\"deleteBlog.php\"style=\"text-align:center\" method=\"POST\">";
 echo "<select name=\"Entry\"> id=\"Entry\">";
 
 for($i = 0; $i < $lineNumber; $i++){
