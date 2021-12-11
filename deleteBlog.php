@@ -68,7 +68,7 @@ if( isset($_POST['Entry'] ))
 $filename = "blogEntries.txt";
 $lineNumber = count(file($filename));
 
-echo "<form action=\"deleteentry.php\"style=\"text-align:center\" target=\"_blank\" method=\"POST\">";
+echo "<form action=\"deleteBlog.php\"style=\"text-align:center\" target=\"_blank\" method=\"POST\">";
 echo "<select name=\"Entry\"> id=\"Entry\">";
 
 for($i = 0; $i < $lineNumber; $i++){
