@@ -7,16 +7,16 @@
 <body>  
   <?php 
   echo "<div class='Container'> ";
-  echo "<div class='titleItem'>Echo Blogger</div>";
-  echo "<div class='headItem'></div>";
-  echo "<div class='headItem'></div>";
-  echo "<div class='headItem'></div>";
-  echo "<div class='headItem'></div>";
-  echo "<div class='headItem'></div>";
-  echo "<div class='headItem active <a href='index.php'>Home</div>";
-  echo "<div class='headItem'><a href='newpost.php'>Create</a></div>";
-  echo "<div class='headItem'><a href='editpost.php'>Edit</a></div>";
-  echo "<div class='headItem'><a href='deleteentry.php'>Delete</a></div>";
+  echo "<div class='title'>Echo Blogger</div>";
+  echo "<div class='item'></div>";
+  echo "<div class='item'></div>";
+  echo "<div class='item'></div>";
+  echo "<div class='item'></div>";
+  echo "<div class='item'></div>";
+  echo "<div class='item active <a href='index.php'>Home</div>";
+  echo "<div class='item'><a href='newpost.php'>Create</a></div>";
+  echo "<div class='item'><a href='editpost.php'>Edit</a></div>";
+  echo "<div class='item'><a href='deleteentry.php'>Delete</a></div>";
   echo "</div>";
   echo "<h1 style='text-align:center'> Welcome to bloggers homepage:</h1>"; 
   ?> 
