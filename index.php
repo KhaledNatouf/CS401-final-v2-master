@@ -21,16 +21,15 @@
   echo "<h1 style='text-align:center'> Welcome to bloggers homepage:</h1>"; 
   ?> 
   <?php
-    $filename = "blogEntries.txt";
-    $posts = fopen($filename, "r");
-    if (!$posts) {
+    $filename =  fopen('blogEntries.txt', 'r');
+    if (!$filename ) {
       die("Unable to open $filename.");
     }
     echo "<div class=\"blogContainer\">";
     echo "<div class=\"blogItem\" style ='clear : both'>";
-    while (!feof($posts)) {
+    while (!feof($filename )) {
     
-      $line = fgets($posts);
+      $line = fgets($filename );
       $parts = explode("`", $line);
       echo "<span><h2>$parts[0]</h2> <p>$parts[1]</p>";
       echo "</span>";
