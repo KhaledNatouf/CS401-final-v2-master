@@ -16,7 +16,7 @@
   echo "<div class='item'></div>";
   echo "<div class='item'></div>";
   echo "<div class='item'><a href='index.php'>Home</div>";
-  echo "<div class='item'><a href='newpost.php'>Create</a></div>";
+  echo "<div class='item'><a href='newBlog.php'>Create</a></div>";
   echo "<div class='item'><a href='editpost.php'>Edit</a></div>";
   
   echo "</div>";

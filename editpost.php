@@ -15,7 +15,7 @@
   echo "<div class='headItem'></div>";
   echo "<div class='headItem'></div>";
   echo "<div class='headItem'><a href='index.php'>Home</div>";
-  echo "<div class='headItem'><a href='newpost.php'>Create</a></div>";
+  echo "<div class='headItem'><a href='newBlog.php'>Create</a></div>";
   echo "<div class='headItem'><a href='deleteentry.php'>Delete</a></div>";
   echo "</div>";
   echo"<h1>Edit page </h1>";
