@@ -6,6 +6,7 @@
 </head>
 
 <body>
+  
 <?php 
   echo "<div class='headContainer'> ";
   echo "<div class='titleItem'>Echo Blogger</div>";
@@ -20,8 +21,8 @@
   echo "</div>";
   echo"<h1>Edit page </h1>";
   echo "<h2>This page allow you to edit old entries</h2>";
-  
   ?> 
+
 <?php
     echo "<div class='writingPage'> ";
 
