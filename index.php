@@ -15,7 +15,7 @@
   echo "<div class='item'></div>";
   echo "<div class='item active <a href='index.php'>Home</div>";
   echo "<div class='item'><a href='newBlog.php'>Create</a></div>";
-  echo "<div class='item'><a href='editpost.php'>Edit</a></div>";
+  echo "<div class='item'><a href='editBlog.php'>Edit</a></div>";
   echo "<div class='item'><a href='deleteentry.php'>Delete</a></div>";
   echo "</div>";
   echo "<h1 style='text-align:center'> Welcome to bloggers homepage:</h1>"; 
