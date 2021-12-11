@@ -6,14 +6,9 @@ if( isset($_POST['Entry'] ) && isset( $_POST['textentry'] ) && isset( $_POST['ti
     $lineNumber = count(file($filename));
     $txt = $_POST['title'].'`'.$_POST['textentry'] . PHP_EOL; 
     $replace = $_POST['Entry'];
-    $result = '';
     $count = 0;
-
-    $source='blogEntries.txt';
-    $target='editingFile.txt';
-
-    $sh=fopen($source, 'r');
-    $th=fopen($target, 'w');
+    $sh=fopen('blogEntries.txt', 'r'); //current file
+    $th=fopen('editingFile.txt', 'w'); // new temporary file
     while (!feof($sh)) {
         $line=fgets($sh);
         if ($count == $replace) {
@@ -26,8 +21,8 @@ if( isset($_POST['Entry'] ) && isset( $_POST['textentry'] ) && isset( $_POST['ti
     fclose($sh);
     fclose($th);
 
-    unlink($source);
-    rename($target, $source);
+    unlink('blogEntries.txt');
+    rename('editingFile.txt', 'blogEntries.txt');
     echo '<script type="text/javascript">'; 
     echo 'alert("New record created successfully");'; 
     echo 'window.location.href = "index.php";';
