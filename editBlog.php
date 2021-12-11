@@ -6,7 +6,7 @@
 </head>
 
 <body>
-  
+
 <?php 
   echo "<div class='headContainer'> ";
   echo "<div class='titleItem'>Echo Blogger</div>";
@@ -30,7 +30,7 @@
     $lineNumber = count(file($filename));
    
     
-    echo "<form action=\"editentries.php\" target=\"_blank\" method=\"POST\"style=\"text-align:center\">";
+    echo "<form action=\"editentries.php\" method=\"POST\"style=\"text-align:center\">";
     echo "<select name=\"Entry\"> id=\"Entry\">";
   
     for($i = 0; $i < $lineNumber; $i++){ 

@@ -22,23 +22,15 @@
   echo "<h1 style='text-align:center'> Welcome to bloggers deletepage:</h1>"; 
   echo "<h2>This page allow you to delete old entries</h2>";
 ?> 
-
 <?php
-
 if( isset($_POST['Entry'] ))
 {
-
     $lines = file('blogEntries.txt');
     $lineNumber = count(file($filename));
     $replace = $_POST['Entry'];
-    $result = '';
     $count = 0;
-
-    $source='blogEntries.txt';
-    $target='editingFile.txt';
-
-    $sh=fopen($source, 'r');
-    $th=fopen($target, 'w');
+    $sh=fopen('blogEntries.txt', 'r');
+    $th=fopen('editingFile.txt', 'w');
     while (!feof($sh)) {
         $line=fgets($sh);
         if ($count == $replace) {
@@ -51,8 +43,8 @@ if( isset($_POST['Entry'] ))
     fclose($sh);
     fclose($th);
 
-    unlink($source);
-    rename($target, $source);
+    unlink('blogEntries.txt');
+    rename('editingFile.txt', 'blogEntries.txt');
     echo '<script type="text/javascript">'; 
     echo 'alert("Your blog was deleted successfully!");'; 
     echo 'window.location.href = "index.php";';
